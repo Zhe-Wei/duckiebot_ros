@@ -17,6 +17,7 @@ dt-exec echo "This is an empty launch script. Update it to launch your applicati
 
 roscore &
 sleep 5
+dt-exec rosrun my_package sub.py
 dt-exec rosrun my_package pub.py
 
 # ----------------------------------------------------------------------------

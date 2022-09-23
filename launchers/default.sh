@@ -19,7 +19,7 @@ roscore &
 sleep 5
 # dt-exec rosrun my_package sub.py
 # dt-exec rosrun my_package pub.py
-dt-exec roslaunch my_package multiple_nodes.launch
+dt-exec roslaunch my_package multiple_nodes.launch veh:=$VEHICLE_NAME
 
 # ----------------------------------------------------------------------------
 # YOUR CODE ABOVE THIS LINE

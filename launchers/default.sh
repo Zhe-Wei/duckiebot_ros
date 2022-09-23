@@ -15,6 +15,9 @@ dt-launchfile-init
 # launching app
 dt-exec echo "This is an empty launch script. Update it to launch your application."
 
+roscore &
+sleep 5
+dt-exec rosrun my_package pub.py
 
 # ----------------------------------------------------------------------------
 # YOUR CODE ABOVE THIS LINE

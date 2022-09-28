@@ -1,12 +1,6 @@
 <launch>
   <group ns="$(arg veh)"> 
     <node pkg="my_package" type="pub.py" name="pub_node_1" output="screen"/>
-    <node pkg="my_package" type="pub.py" name="pub_node_2" output="screen"/>
-    <node pkg="my_package" type="sub.py" name="sub_node_1"  output="screen">
-      <remap from="~/chatter" to="/$(arg veh)/pub_node_1/chatter"/>
-    </node>
-    <node pkg="my_package" type="sub.py" name="sub_node_2"  output="screen">
-      <remap from="~/chatter" to="/$(arg veh)/pub_node_2/chatter"/>
-    </node>
+    <node pkg="my_package" type="sub.py" name="sub_node_1"  output="screen"/>
   </group>
 </launch>

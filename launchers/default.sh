@@ -15,8 +15,12 @@ dt-launchfile-init
 # launching app
 dt-exec echo "This is an empty launch script. Update it to launch your application."
 
-roscore &
-sleep 5
+# roscore &
+# sleep 5
+
+export ROS_MASTER_URI=http://10.87.1.99:11311/
+export ROS_IP=10.87.1.119 
+
 # dt-exec rosrun my_package sub.py
 # dt-exec rosrun my_package pub.py
 dt-exec roslaunch my_package multiple_nodes.launch veh:=$VEHICLE_NAME

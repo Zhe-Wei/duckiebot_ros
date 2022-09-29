@@ -18,6 +18,8 @@ dt-exec echo "This is an empty launch script. Update it to launch your applicati
 # roscore &
 # sleep 5
 
+xhost +local:
+
 export ROS_MASTER_URI=http://10.87.1.99:11311/
 export ROS_IP=10.87.1.119 
 
